@@ -3,13 +3,23 @@ About pyextremes
 
 Home: https://github.com/georgebv/pyextremes
 
-Package license: GPL-3.0-or-later
+Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyextremes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Extreme Value Analysis (EVA) in Python
 
-pyextremes is a Python library dedicated to solving problems from the area of Extreme Value Analysis (EVA). It provides tools to extract extreme events from time series using Block Maxima or Peaks Over Threshold methods, to fit models such as GEV and GPD to the extracted extreme values, and to provide estimates of extreme events and corresponding confidence intervals for given return periods. Models are fitted to the data using the Maximum Likelihood Estimate (MLE, via scipy) or the Markov Chain Monte Calro (MCMC, via emcee) models.
+Development: https://github.com/georgebv
+
+pyextremes is a Python library implementing an easy-to-use extensible framework
+used to perform Extreme Value Analysis (EVA).
+It provides tools necessary to perform typical tasks constituting EVA, such as:
+extraction of extreme events from time series using Block Maxima or Peaks Over Threshold methods;
+fitting continuous distributions, such as GEV, GPD, or user specified continous distribution, to the extracted extreme events;
+visualization of model performance and goodness-of-fit statistics;
+estimation of extreme events of given probability (e.g. 100-year event) and corresponding confidence intervals;
+tools assisting with model selection and tuning (block size in BM, threshold in POT);
+(work-in-progress) multivariate extreme value analysis;
 
 
 Current build status
