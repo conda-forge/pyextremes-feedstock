@@ -1,5 +1,5 @@
 {% set name = "pyextremes" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: edb9b839fcb2a5c80873e777e8efedf749324a5efa41c1e432b42c915b857d15
+  sha256: 77f0e615c721fe680db7c059d152e8f0fe5fa3214e7e8451aec54e6586d3034d
 
 build:
   noarch: python
@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - numpy
-    - scipy
-    - pandas
-    - matplotlib-base
-    - emcee >=3.0.0
+    - python >=3.8
+    - emcee >=3.0
+    - matplotlib-base >=3.3
+    - numpy >=1.19
+    - pandas >=1.0
+    - scipy >=1.5
 
 test:
   imports:
