@@ -1,5 +1,5 @@
 {% set name = "pyextremes" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ce51cb53e62ebbb6527ce9ecba3638b01328ea840b2793b1dcadc68afa93471
+  sha256: 80b297da538894abc20bb25adfa3abf69362f4aff30c4c9469a0fe55727dfcb3
 
 build:
   noarch: python
