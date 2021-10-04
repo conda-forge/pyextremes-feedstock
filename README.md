@@ -11,16 +11,7 @@ Summary: Extreme Value Analysis (EVA) in Python
 
 Development: https://github.com/georgebv
 
-pyextremes is a Python library implementing an easy-to-use extensible framework
-used to perform Extreme Value Analysis (EVA).
-It provides tools necessary to perform typical tasks constituting EVA, such as:
-extraction of extreme events from time series using Block Maxima or Peaks Over Threshold methods;
-fitting continuous distributions, such as GEV, GPD, or user specified continous distribution, to the extracted extreme events;
-visualization of model performance and goodness-of-fit statistics;
-estimation of extreme events of given probability (e.g. 100-year event) and corresponding confidence intervals;
-tools assisting with model selection and tuning (block size in BM, threshold in POT);
-(work-in-progress) multivariate extreme value analysis;
-
+pyextremes is a Python library aimed at performing univariate Extreme Value Analysis (EVA).
 
 Current build status
 ====================
