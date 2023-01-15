@@ -1,13 +1,13 @@
 {% set name = "pyextremes" %}
-{% set version = "2.2.4" %}
+{% set version = "2.2.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80b297da538894abc20bb25adfa3abf69362f4aff30c4c9469a0fe55727dfcb3
+  url: https://github.com/georgebv/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 72363b406ebc4beb860830769b7dbdcf1ebc916e9b304bc43c5923d533067fef
 
 build:
   noarch: python
