@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install .[full] -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - emcee >=3.0
     - matplotlib-base >=3.3
     - numpy >=1.19
@@ -33,6 +33,7 @@ test:
     - pyextremes
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
