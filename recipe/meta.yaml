@@ -12,13 +12,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install .[full] -vv
+  script: {{ PYTHON }} -m pip install .[full] --no-deps -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry
+    - uv
   run:
     - python >={{ python_min }}
     - emcee >=3.0
