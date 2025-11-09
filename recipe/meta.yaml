@@ -1,5 +1,5 @@
 {% set name = "pyextremes" %}
-{% set version = "2.3.3" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/georgebv/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 724c3236b0b1a071a356dac2491c165b103df0d8325d7a9521437ce61184dd20
+  sha256: 5f827ac882b40019369bfd27a77d45ff6047454542c617e879a0ec7734224de8
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install .[full] -vv
 
 requirements:
