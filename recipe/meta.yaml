@@ -1,5 +1,5 @@
 {% set name = "pyextremes" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/georgebv/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5f827ac882b40019369bfd27a77d45ff6047454542c617e879a0ec7734224de8
+  sha256: 7949377736d35559e8ef6a265a5a0d114e90293db490e353537b382a2718f553
 
 build:
   noarch: python
